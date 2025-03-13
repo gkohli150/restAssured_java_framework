@@ -25,7 +25,7 @@ public class Utils {
 		if(req==null)
 		{
 		PrintStream log =new PrintStream(new FileOutputStream("logging.txt"));
-		 req=new RequestSpecBuilder().setBaseUri(getGlobalValue("baseUrl")).addQueryParam("key", "qaclick123")
+		 req=new RequestSpecBuilder().setBaseUri(getGlobalValue("baseUrl")).addQueryParam("key", "")
 				 .addFilter(RequestLoggingFilter.logRequestTo(log))
 				 .addFilter(ResponseLoggingFilter.logResponseTo(log))
 		.setContentType(ContentType.JSON).build();
@@ -40,7 +40,7 @@ public class Utils {
 	public static String getGlobalValue(String key) throws IOException
 	{
 		Properties prop =new Properties();
-		FileInputStream fis =new FileInputStream("/Users/rahulshetty/restassurednew/APIFramework/src/test/java/resources/global.properties");
+		FileInputStream fis =new FileInputStream("/Users/restassurednew/APIFramework/src/test/java/resources/global.properties");
 		prop.load(fis);
 		return prop.getProperty(key);
 	
