@@ -20,7 +20,7 @@ This repository contains an API test automation framework built using [REST Assu
 
 ### Clone Repository
 ```bash
-git clone https://github.com/your-repo/api-automation.git
+git clone[ https://github.com/your-repo/api-automation.git](https://github.com/gkohli150/restAssured_java_framework.git)
 cd api-automation
 ```
 
